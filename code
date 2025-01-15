@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #d32323;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar input[type="submit"] {
+            padding: 10px;
+            border: 1px solid #d32323;
+            background-color: #d32323;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .restaurant-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .restaurant {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .restaurant img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .restaurant h2 {
+            margin: 10px 0;
+        }
+        .restaurant p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Zomato Clone</h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for restaurants...">
+        <input type="submit" value="Search">
+    </div>
+
+    <div class="restaurant-list">
+        <div class="restaurant">
+            <img src="restaurant1.jpg" alt="Restaurant 1">
+            <h2>Restaurant 1</h2>
+            <p>Cuisine: Italian</p>
+            <p>Location: New York, NY</p>
+        </div>
+        <div class="restaurant">
+            <img src="restaurant2.jpg" alt="Restaurant 2">
+            <h2>Restaurant 2</h2>
+            <p>Cuisine: Chinese</p>
+            <p>Location: San Francisco, CA</p>
+        </div>
+        <!-- Add more restaurants as needed -->
+    </div>
+
+</body>
+</html>
